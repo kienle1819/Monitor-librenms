@@ -20,10 +20,11 @@ setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstra
 setfacl -R -m g::rwx /opt/librenms/rrd /opt/librenms/logs /opt/librenms/bootstrap/cache/ /opt/librenms/storage/
 ```
 ##  PHP dependencies
+```
 su - librenms
 ./scripts/composer_wrapper.php install --no-dev
 exit
-
+```
 ## Timezone:
 ```
 vi /etc/php/7.4/fpm/php.ini
